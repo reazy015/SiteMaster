@@ -1,0 +1,47 @@
+.breadcrumbs {
+  @include default-list;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.breadcrumbs-item {
+  text-transform: uppercase;
+  text-align: center;
+
+  &--fashion {
+    width: 98px;
+    background-color: $basic-fashion;
+  }
+
+  &--movies {
+    width: 98px;
+    background-color: $basic-orange;
+  }
+
+  &--tv {
+    flex: 1 1 auto;
+    background-color: $basic-blue;
+  }
+}
+.breadcrumbs-item__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: $basic-white;
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &--active {
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      bottom: -19px;
+      right: 50%;
+      margin-right: -10px;
+      border: 8px solid transparent;
+      border-top: 12px solid $basic-orange;
+    }
+  }
+}

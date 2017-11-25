@@ -1,0 +1,11 @@
+.movie-gallery {
+  background-color: $gallery-bg;
+  border: 1px solid $gallery-border;
+  padding: 13px;
+}
+.thumbs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}

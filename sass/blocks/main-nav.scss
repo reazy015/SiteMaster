@@ -1,0 +1,61 @@
+.main-nav__switch {
+  display: none;
+}
+.menu {
+  @include default-list;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  justify-content: flex-start;
+}
+.menu-item {
+  text-align: center;
+  cursor: pointer;
+  transition: all .5s;
+
+  &--main {
+    width: 106px;
+    background-color: $basic-blue;
+  }
+  &--movie {
+    width: 106px;
+    background-color: $basic-green;
+  }
+  &--shop {
+    width: 107px;
+    background-color: $basic-purple;
+  }
+  &--project {
+    width: 106px;
+    background-color: $basic-blue;
+  }
+  &--news {
+    width: 107px;
+    background-color: $basic-orange;
+  }
+  &--archiev {
+    width: 105px;
+    background-color: $basic-red;
+  }
+  &--contacts {
+    background-color: $basic-grey;
+    flex: 1 1 auto;
+    text-align: left;
+  }
+}
+.menu-item__link {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: $basic-white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: all .5s;
+
+  &:hover {
+    background-color: $basic-hover;
+  }
+  &--contacts {
+    padding-left: 10px;
+  }
+}

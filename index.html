@@ -1,229 +1,256 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CinemaExpert</title>
-  </head>
-  <body class="page">
+<head>
+  <meta charset="utf-8">
+  <title>CinemaExpert</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "img/cinema-expert.png" );
+  }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+</head>
+<body class="page">
+  <include src="img/triangle.svg"></include>
 
-    <!-- Page-header section -->
+  <!-- Page-header section -->
 
-    <header class="page-header">
-      <div class="container">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-            Эксперт
-          </div>
-          <form class="page-header__searh searh-form" action="index.html" method="post">
-            <input class="search-form__input"type="text" name="" value="">
-            <button type="search-form__submit-btn" name="button"></button>
-          </form>
-          <ul clas="page-header__social socials-list">
-            <li class="socials-list__item"></li>
-            <li class="socials-list__item"></li>
-            <li class="socials-list__item"></li>
-          </ul>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a class="page-link" href="#">Эксперт</a>
         </div>
-        <nav class="page-header__main-nav main-nav">
-          <ul class="menu">
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Главная</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Кино</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Магазин</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Проекты</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Новости</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Архив</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link"href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <form class="page-header__searh search-form" action="index.html" method="post">
+          <input class="search-form__input"type="text" name="" value="">
+          <button class="search-form__submit-btn" type="button" name="button">Поиск</button>
+        </form>
+        <ul class="page-header__social socials-list">
+          <li class="socials-list__item socials-list__item--rss"></li>
+          <li class="socials-list__item socials-list__item--fb"></li>
+          <li class="socials-list__item socials-list__item--tw"></li>
+        </ul>
       </div>
-    </header>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="menu">
+          <li class="menu-item menu-item--main">
+            <a class="menu-item__link"href="#">Главная</a>
+          </li>
+          <li class="menu-item menu-item--movie">
+            <a class="menu-item__link"href="#">Кино</a>
+          </li>
+          <li class="menu-item menu-item--shop">
+            <a class="menu-item__link"href="#">Магазин</a>
+          </li>
+          <li class="menu-item menu-item--project">
+            <a class="menu-item__link"href="#">Проекты</a>
+          </li>
+          <li class="menu-item menu-item--news">
+            <a class="menu-item__link"href="#">Новости</a>
+          </li>
+          <li class="menu-item menu-item--archiev">
+            <a class="menu-item__link"href="#">Архив</a>
+          </li>
+          <li class="menu-item menu-item--contacts">
+            <a class="menu-item__link menu-item__link--contacts"href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="main-nav__awitch">
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Main section -->
+  <!-- Main section -->
 
-    <main class="page-main">
-      <div class="container">
-        <div class="page-main__wrapper">
+  <main class="page-main">
+    <div class="container">
+      <div class="page-main__wrapper">
 
-          <div class="movie-descr">
-            <h1 class="movie-descr__header"></h1>
-            <p class="movie-descr__text"></p>
-            <div class="movie-gallery">
-              <div class="movie-gallery__main">
-
+        <div class="movie-descr">
+          <h1 class="movie-descr__header">Lorem Ipsum is simply dummy text of the printing</h1>
+          <p class="movie-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
+          <div class="movie-gallery">
+            <div class="movie-gallery__main">
+              <img src="img/image1.png" alt="кадр из фильма">
+            </div>
+            <div class="movie-gallery__thumbs thumbs">
+              <div class="thumbs__item">
+                <img src="img/image2.png" alt="кадр из фильма">
               </div>
-              <div class="movie-gallery__thumbs thums">
-                <div class="thums__item">
+              <div class="thumbs__item">
+                <img src="img/image3.png" alt="кадр из фильма">
+              </div>
+              <div class="thumbs__item">
+                <img src="img/image4.png" alt="кадр из фильма">
+              </div>
+              <div class="thumbs__item">
+                <img src="img/image5.png" alt="кадр из фильма">
+              </div>
+            </div>
+          </div>
+          <p class="movie-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
 
+        <aside class="aside">
+
+          <div class="interests">
+            <h2 class="interests-header">Интересное</h2>
+            <ul class="interests-nav breadcrumbs">
+              <li class="breadcrumbs-item breadcrumbs-item--fashion">
+                <a class="breadcrumbs-item__link" href="#">Мода</a>
+              </li>
+              <li class="breadcrumbs-item breadcrumbs-item--movies">
+                <a class="breadcrumbs-item__link breadcrumbs-item__link--active" href="#">Кино</a>
+              </li>
+              <li class="breadcrumbs-item breadcrumbs-item--tv">
+                <a class="breadcrumbs-item__link" href="#">TV</a>
+              </li>
+            </ul>
+
+            <div class="interests-info-block block block--movies">
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
                 </div>
-                <div class="thums__item">
-
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
                 </div>
-                <div class="thums__item">
-
+              </div>
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
                 </div>
-                <div class="thums__item">
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+            </div>
 
+            <div class="interests-info-block block block--fashion">
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="interests-info-block block block--tv">
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                </div>
+              </div>
+              <div class="block-elem">
+                <div class="block-elem__thumb">
+                  <img src="img/moviethumb.png" alt="постер фильма">
+                </div>
+                <div class="block-elem-descr">
+                  <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
+                  <p class="block-elem-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <aside class="aside">
+          <div class="likes">
+            <h2 class="likes-header">Понравилось посетителяи</h2>
 
-            <div class="interests">
-              <h2 class="interests-header">Интересное</h2>
-              <ul class="interests-nav breadcrumbs">
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-item__link breadcrumbs-item__link--fashion"href="#">Мода</a>
-                </li>
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-item__link breadcrumbs-item__link--movies"href="#">Кино</a>
-                </li>
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-item__link breadcrumbs-item__link--tv"href="#">TV</a>
-                </li>
-              </ul>
-
-              <div class="interests-info-block block block--movies">
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
+            <div class="likes-block">
+              <div class="likes-block__thumb">
+                <img src="img/intthumb.png" alt="иконка">
               </div>
-
-              <div class="interests-info-block block block--fashion">
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="interests-info-block block block--tv">
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
-                <div class="block-elem">
-                  <div class="block-elem__thumb">
-
-                  </div>
-                  <div class="block-elem-descr">
-                    <h4 class="block-elem-descr__header-link"><a href="#"></a></h4>
-                    <p class="block-elem-descr__text"></p>
-                  </div>
-                </div>
+              <div class="likes-block-descr">
+                <p class="likes-block-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting<br><br> industry. <span><a  class="likes-block-descr-link" href="#">Medication »</a></span></p>
               </div>
             </div>
 
-            <div class="likes">
-              <h2 class="likes-header">Понравилось</h2>
-
-              <div class="likes-block">
-                <div class="likes-block__thumb">
-
-                </div>
-                <div class="likes-block-descr">
-                  <p class="likes-block-descr__text"></p><span><a  class="likes-block-descr__link" href="#"></a></span>
-                </div>
+            <div class="likes-block">
+              <div class="likes-block__thumb">
+                <img src="img/intthumb.png" alt="иконка">
               </div>
-
-              <div class="likes-block">
-                <div class="likes-block__thumb">
-
-                </div>
-                <div class="likes-block-descr">
-                  <p class="likes-block-descr__text"></p><span><a  class="likes-block-descr__link" href="#"></a></span>
-                </div>
-              </div>
-
-              <div class="likes-block">
-                <div class="likes-block__thumb">
-
-                </div>
-                <div class="likes-block-descr">
-                  <p class="likes-block-descr__text"></p><span><a  class="likes-block-descr__link" href="#"></a></span>
-                </div>
+              <div class="likes-block-descr">
+                <p class="likes-block-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting<br><br> industry. <span><a  class="likes-block-descr-link" href="#">Medication »</a></span></p>
               </div>
             </div>
 
+            <div class="likes-block">
+              <div class="likes-block__thumb">
+                <img src="img/intthumb.png" alt="иконка">
+              </div>
+              <div class="likes-block-descr">
+                <p class="likes-block-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting<br><br> industry. <span><a  class="likes-block-descr-link" href="#">Medication »</a></span></p>
+              </div>
+            </div>
 
-          </aside>
-        </div>
+            <div class="likes-block">
+              <div class="likes-block__thumb">
+                <img src="img/intthumb.png" alt="иконка">
+              </div>
+              <div class="likes-block-descr">
+                <p class="likes-block-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting<br><br> industry. <span><a  class="likes-block-descr-link" href="#">Medication »</a></span></p>
+              </div>
+            </div>
+          </div>
+
+
+        </aside>
+
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
 </html>
