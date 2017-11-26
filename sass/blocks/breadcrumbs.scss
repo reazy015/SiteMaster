@@ -5,8 +5,15 @@
   margin-bottom: 15px;
 }
 .breadcrumbs-item {
+  position: relative;
   text-transform: uppercase;
   text-align: center;
+  color: $basic-white;
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  transition: all .5s;
 
   &--fashion {
     width: 98px;
@@ -23,25 +30,19 @@
     background-color: $basic-blue;
   }
 }
-.breadcrumbs-item__link {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  color: $basic-white;
-  font-size: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+.breadcrumbs-item__active-indicator {
+  display: none;
+  position: absolute;
+  bottom: -16px;
+  right: 50%;
+  border: 6px solid transparent;
+  border-top-width: 10px;
+  margin-right: -7px;
+  border-top-style: solid;
+  border-top-color: $basic-orange;
 
   &--active {
-    &:after {
-      display: block;
-      position: absolute;
-      content: '';
-      bottom: -19px;
-      right: 50%;
-      margin-right: -10px;
-      border: 8px solid transparent;
-      border-top: 12px solid $basic-orange;
-    }
+    display: block;
+
   }
 }

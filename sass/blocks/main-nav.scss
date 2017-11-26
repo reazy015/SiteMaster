@@ -7,6 +7,7 @@
   flex-direction: row;
   text-transform: uppercase;
   justify-content: flex-start;
+  padding-left: 8px;
 }
 .menu-item {
   text-align: center;
@@ -14,32 +15,32 @@
   transition: all .5s;
 
   &--main {
-    width: 106px;
+    flex: 1 1 8.5%;
     background-color: $basic-blue;
   }
   &--movie {
-    width: 106px;
+    flex: 1 1 8.6%;
     background-color: $basic-green;
   }
   &--shop {
-    width: 107px;
+    flex: 1 1 8.2%;
     background-color: $basic-purple;
   }
   &--project {
-    width: 106px;
+    flex: 1 1 8.5%;
     background-color: $basic-blue;
   }
   &--news {
-    width: 107px;
+    flex: 1 1 8.6%;
     background-color: $basic-orange;
   }
   &--archiev {
-    width: 105px;
+    flex: 1 1 8.5%;
     background-color: $basic-red;
   }
   &--contacts {
     background-color: $basic-grey;
-    flex: 1 1 auto;
+    flex: 2 1 32%;
     text-align: left;
   }
 }

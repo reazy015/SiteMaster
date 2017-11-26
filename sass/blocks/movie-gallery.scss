@@ -1,11 +1,41 @@
+.movie-descr {
+  padding-left: 11px;
+}
+.movie-descr__header {
+  font-family: "OpenSans Bold", sans-serif;
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 46px;
+  margin-top: 17px;
+  margin-bottom: 2px;
+  padding-left: 2px;
+}
+.movie-descr__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-text;
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding-left: 4px;
+  text-align: justify;
+}
 .movie-gallery {
   background-color: $gallery-bg;
   border: 1px solid $gallery-border;
-  padding: 13px;
+  padding: 10px 8px 10px 10px;
+  margin-bottom: 22px;
+}
+.movie-gallery__main {
+  margin-bottom: 9px;
+}
+.movie-gallery__thumbs {
 }
 .thumbs {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+.thumbs__item {
+  cursor: pointer;
 }

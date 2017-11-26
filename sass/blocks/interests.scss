@@ -25,23 +25,17 @@
     border-left: 18px solid $basic-purple;
   }
 }
-.block {
-  &--fashion {
-    display: none;
-  }
-
-  &--tv {
-    display: none;
-  }
-}
 .block-elem {
   display: flex;
   flex-direction: row;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   border-bottom: 1px solid $basic-border-grey;
+  padding-bottom: 10px;
 
   &:last-of-type {
     margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 .block-elem__thumb {
@@ -50,6 +44,9 @@
 }
 .block-elem-descr {
   width: 240px;
+}
+.block-elem-descr__text {
+  padding-left: 2px;
 }
 .block-elem-descr__header-link {
   margin: 0;
@@ -68,4 +65,7 @@
 }
 .block-elem-descr__text {
   font-size: 13px;
+}
+.block-list--hidden {
+  display: none;
 }

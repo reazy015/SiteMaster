@@ -6,6 +6,10 @@ img {
 }
 .container {
   width: 1012px;
-  margin: auto;
-  padding-left: 12px;
+  margin: auto;  
+}
+@media (max-width: 968px) {
+  .container {
+    width: 768px;
+  }
 }

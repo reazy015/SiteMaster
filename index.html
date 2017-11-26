@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>CinemaExpert</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <!-- Pixel Glass -->
   <style>
   HTML {
@@ -79,20 +80,21 @@
           <p class="movie-descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
           <div class="movie-gallery">
             <div class="movie-gallery__main">
-              <img src="img/image1.png" alt="кадр из фильма">
+              <img class="main-gallery-img" src="img/image1.png" alt="кадр из фильма">
             </div>
             <div class="movie-gallery__thumbs thumbs">
               <div class="thumbs__item">
-                <img src="img/image2.png" alt="кадр из фильма">
+                <img class="gallery-img" src="img/image5.png" alt="кадр из фильма">
+
               </div>
               <div class="thumbs__item">
-                <img src="img/image3.png" alt="кадр из фильма">
+                <img class="gallery-img" src="img/image4.png" alt="кадр из фильма">
               </div>
               <div class="thumbs__item">
-                <img src="img/image4.png" alt="кадр из фильма">
+                <img class="gallery-img" src="img/image3.png" alt="кадр из фильма">
               </div>
               <div class="thumbs__item">
-                <img src="img/image5.png" alt="кадр из фильма">
+                <img class="gallery-img" src="img/image2.png" alt="кадр из фильма">                
               </div>
             </div>
           </div>
@@ -104,18 +106,18 @@
           <div class="interests">
             <h2 class="interests-header">Интересное</h2>
             <ul class="interests-nav breadcrumbs">
-              <li class="breadcrumbs-item breadcrumbs-item--fashion">
-                <a class="breadcrumbs-item__link" href="#">Мода</a>
+              <li class="breadcrumbs-item breadcrumbs-item--fashion" data-pointer="fashion">Мода
+                <span class="breadcrumbs-item__active-indicator" data-pointer="fashion"></span>
               </li>
-              <li class="breadcrumbs-item breadcrumbs-item--movies">
-                <a class="breadcrumbs-item__link breadcrumbs-item__link--active" href="#">Кино</a>
+              <li class="breadcrumbs-item breadcrumbs-item--movies acitve-item" data-pointer="movies">Кино
+                <span class="breadcrumbs-item__active-indicator breadcrumbs-item__active-indicator--active" data-pointer="movies"></span>
               </li>
-              <li class="breadcrumbs-item breadcrumbs-item--tv">
-                <a class="breadcrumbs-item__link" href="#">TV</a>
+              <li class="breadcrumbs-item breadcrumbs-item--tv" data-pointer="tv">TV
+                <span class="breadcrumbs-item__active-indicator" data-pointer="tv"></span>
               </li>
             </ul>
 
-            <div class="interests-info-block block block--movies">
+            <div class="interests-info-block block block--movies" data-spec="movies">
               <div class="block-elem">
                 <div class="block-elem__thumb">
                   <img src="img/moviethumb.png" alt="постер фильма">
@@ -145,7 +147,7 @@
               </div>
             </div>
 
-            <div class="interests-info-block block block--fashion">
+            <div class="interests-info-block block block-list--hidden" data-spec="fashion">
               <div class="block-elem">
                 <div class="block-elem__thumb">
                   <img src="img/moviethumb.png" alt="постер фильма">
@@ -157,7 +159,7 @@
               </div>
               <div class="block-elem">
                 <div class="block-elem__thumb">
-                  <img src="img/moviethumb.png" alt="постер фильма">
+                  <img src="img/intthumb.png" alt="постер фильма">
                 </div>
                 <div class="block-elem-descr">
                   <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
@@ -166,7 +168,7 @@
               </div>
               <div class="block-elem">
                 <div class="block-elem__thumb">
-                  <img src="img/moviethumb.png" alt="постер фильма">
+                  <img src="img/intthumb.png" alt="постер фильма">
                 </div>
                 <div class="block-elem-descr">
                   <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
@@ -175,7 +177,7 @@
               </div>
             </div>
 
-            <div class="interests-info-block block block--tv">
+            <div class="interests-info-block block block-list--hidden" data-spec="tv">
               <div class="block-elem">
                 <div class="block-elem__thumb">
                   <img src="img/moviethumb.png" alt="постер фильма">
@@ -187,7 +189,7 @@
               </div>
               <div class="block-elem">
                 <div class="block-elem__thumb">
-                  <img src="img/moviethumb.png" alt="постер фильма">
+                  <img src="img/intthumb.png" alt="постер фильма">
                 </div>
                 <div class="block-elem-descr">
                   <h4 class="block-elem-descr__header-link"><a href="#">Lorem Ipsum is simply dummy text of the printing </a></h4>
@@ -252,5 +254,6 @@
       </div>
     </div>
   </main>
+<script src="js/main.js"></script>
 </body>
 </html>
