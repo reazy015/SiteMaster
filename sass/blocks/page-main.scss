@@ -10,3 +10,30 @@
 .aside {
   width: 326px;
 }
+@media (max-width: 1055px) {
+  .page-wrapper {
+    width: auto;
+  }
+}
+@media (max-width: 925px) {
+  .page-main__wrapper {
+    flex-wrap: wrap;
+  }
+  .movie-descr {
+    width: 100%;
+  }
+  .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 750px) {
+  .page-main__wrapper {
+    flex-direction: column;
+  }
+  .aside {
+    flex-direction: column;
+  }
+}

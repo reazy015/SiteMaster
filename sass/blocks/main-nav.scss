@@ -63,3 +63,44 @@
     padding-left: 10px;
   }
 }
+
+@media (max-width: 1050px) {
+  .menu {
+    padding-left: 0;
+  }
+  .menu-item--contacts {
+    flex: 1 1 15%;
+  }
+}
+@media (max-width: 750px) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+  .main-nav {
+    padding: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobiles {
+    display: block;
+  }
+  .main-nav__switch {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    margin-bottom: 10px;
+  }
+  .menu-btn-elem {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: $basic-blue;
+    margin-bottom: 5px;
+  }
+}

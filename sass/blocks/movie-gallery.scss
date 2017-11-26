@@ -64,3 +64,23 @@
 .thumbs__item {
   cursor: pointer;
 }
+@media (max-width: 1157px) {
+  .movie-date {
+    top: 18px;
+    left: -20px;
+  }
+  .movie-date__number {
+    width: 34px;
+    font-size: 14px;
+  }
+  .movie-date__month {
+    width: 34px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 750px) {
+  .movie-date {
+    left: 300px;
+    top: 20px;
+  }
+}

@@ -3,9 +3,11 @@ const breadcrumbsMenu = document.querySelector('.breadcrumbs');
 const breadcrumbsMenuPointers = document.querySelectorAll('span[data-pointer]');
 const gallery = document.querySelector('.movie-gallery');
 const galleryMainImg = document.querySelector('.main-gallery-img');
+const mobileMenuSwitchBtn = document.querySelector('.mobile-sw-btn');
+const mobileMenu = document.querySelector('.menu');
 
 
-// Объекьт дополнительной навигации с  переключением между вкладками Мода ТВ Кино
+// Класс дополнительной навигации с  переключением между вкладками Мода ТВ Кино
 function AsideMenu(menu, blockList) {
   this.menu = menu;
   this.blockList = blockList;
@@ -34,7 +36,7 @@ function AsideMenu(menu, blockList) {
   }
 }
 
-// Объект галлерии с переключением между миниатюрами
+// Класс галлерии с переключением между миниатюрами
 function Gallery(gallery, galleryMain) {
   const self = this;
   this.gallery = gallery;
@@ -51,6 +53,19 @@ function Gallery(gallery, galleryMain) {
   }
 }
 
+// Класс адаптивного меню
+function Menu(btn, menu){
+  const self = this;
+  this.btn = btn;
+  this.menu = menu;
+  this.btn.addEventListener('click', openCloseMenu);
+
+  function openCloseMenu(e){
+    self.menu.classList.toggle('menu-mobiles')  
+  }
+}
+
 // Инициализация объектов
 new AsideMenu(breadcrumbsMenu, blockList);
 new Gallery(gallery, galleryMainImg);
+new Menu(mobileMenuSwitchBtn, mobileMenu);

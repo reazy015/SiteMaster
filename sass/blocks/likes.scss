@@ -34,3 +34,9 @@
   text-decoration: none;
   color: $basic-blue;
 }
+
+@media (max-width: 925px) {
+  .likes {
+    margin-top: 40px;
+  }
+}
