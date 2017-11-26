@@ -28,9 +28,9 @@ function AsideMenu(menu, blockList) {
 
     blockList.forEach(function(x){
       if (x.dataset.spec === pointer) {
-        x.classList.remove('block-list--hidden');
+        x.classList.remove('block--hidden');
       } else {
-        x.classList.add('block-list--hidden');
+        x.classList.add('block--hidden');
       }
     });
   }
@@ -61,7 +61,7 @@ function Menu(btn, menu){
   this.btn.addEventListener('click', openCloseMenu);
 
   function openCloseMenu(e){
-    self.menu.classList.toggle('menu-mobiles')  
+    self.menu.classList.toggle('menu-mobiles')
   }
 }
 
