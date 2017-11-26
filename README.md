@@ -7,3 +7,7 @@
 Для проверки валидности БЭМ использовался http://yoksel.github.io/html-tree/
 
 Pixel Perfect https://github.com/yoksel/pixel-glass-js
+
+Для установки пакетов выполнить: npm install
+
+Для просмотра и запуска выполнить: npm start
