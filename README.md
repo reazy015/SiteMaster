@@ -8,6 +8,6 @@
 
 Pixel Perfect https://github.com/yoksel/pixel-glass-js
 
-Для установки пакетов выполнить: npm install
+Для установки пакетов выполнить: <b>npm install</b>
 
 Для просмотра и запуска выполнить: npm start
