@@ -1,12 +1,25 @@
 * {
   font-family: "OpenSans", sans-serif;
 }
+html {
+  height: 100%;
+}
 img {
   width: 100%;
 }
 .container {
   width: 1012px;
-  margin: auto;  
+  margin: auto;
+}
+.page {
+  height: 100%;
+  background-color: #ebebeb;
+}
+.page-wrapper {
+  position: relative;
+  width: 1054px;
+  margin: auto;
+  background-color: #ffffff;
 }
 @media (max-width: 968px) {
   .container {

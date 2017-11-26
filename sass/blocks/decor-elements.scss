@@ -1,0 +1,28 @@
+.page__decor-ang {
+  position: absolute;
+  top: -67px;
+  left: -300px;
+  background-image: url('../img/backtape.png');
+  width: 500px;
+  height: 500px;
+  z-index: -50;
+}
+.page__decor-top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -13px;
+  width: 13px;
+  background-image: url('../img/border-tape.png');
+  background-repeat: no-repeat;
+  z-index: -50px
+}
+.page__decor-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 340px;
+  right: -13px;
+  width: 13px;
+  background-image: url('../img/border-tape2.png');
+  background-repeat: no-repeat;
+}

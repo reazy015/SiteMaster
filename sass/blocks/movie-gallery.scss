@@ -1,5 +1,30 @@
 .movie-descr {
+  position: relative;
   padding-left: 11px;
+}
+.movie-date {
+  position: absolute;
+  left: -64px;
+  top: 24px;
+}
+.movie-date__number {
+  width: 68px;
+  padding-top: 5px;
+  background-color: $basic-orange;
+  color: $basic-white;
+  font-size: 35px;
+  font-family: "OpenSans Bold", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.movie-date__month {
+  width: 68px;
+  padding-top: 3px;
+  background-color: $basic-blue;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
 }
 .movie-descr__header {
   font-family: "OpenSans Bold", sans-serif;
